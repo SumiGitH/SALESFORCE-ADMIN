@@ -6,4 +6,33 @@
 
 
 
-     ![Uploading image.png…]()
+
+
+
+
+
+
+Roll-Up Summary:A field on a Master object that performs a COUNT, SUM, MIN, or MAX calculation across all related Detail (child) records. Only available with Master-Detail relationships.
+
+Formula Fields: A read-only field whose value is automatically calculated by Salesforce using a formula expression. The value updates in real-time when referenced fields change.
+
+Page Layout: A configuration that defines which fields, sections, related lists, and buttons appear on a record's detail and edit pages. Different layouts can be assigned to different profiles
+
+Compact Layout: A configuration that defines up to 10 fields shown in the record highlight panel at the top of a record page and in the Salesforce mobile app.
+
+List View:A filtered and sorted view of records for an object. Users can create personal list views or admins can create shared list views visible to all users.
+
+OWD: The baseline record access level for users who do not own the record. Options: Private, Public Read Only, Public Read/Write. OWD is the most restrictive setting — access can only be opened from here.
+
+Profile: A collection of settings that controls what a user can do in Salesforce — object permissions, FLS, app visibility, and system permissions. Every user has exactly one profile.
+
+FLS:Per-profile settings that control whether a field is Visible, Read-Only, or Hidden. Works in conjunction with Page Layouts — both must allow the field for it to display.
+
+Record Type:A configuration on an object that enables different page layouts, picklist values, and business processes for different subsets of records. Assigned to profiles.
+
+Role Hierarchy:A tree structure of roles in the organisation. Users at higher roles can view (and optionally edit) records owned by users in lower roles, subject to OWD settings.
+
+
+<img width="732" height="256" alt="image" src="https://github.com/user-attachments/assets/1d702889-e8f7-4b9f-8fec-2f80a0b4a872" />
+
+     
