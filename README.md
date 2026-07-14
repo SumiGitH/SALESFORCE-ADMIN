@@ -99,3 +99,76 @@ Architectural Hint: ISPICKVAL evaluates single-select picklist entries. If the e
 status being Enrolled while the date field has no value, the transaction is rejected.
 Error Location Field: Enrollment_Date__c
 Error Message Enrollment Date is required when student status is Enrolled.
+
+Quick Reference Index Matrix Summary
+# Lab Scenario Context Description Key Programmatic Functions Core Conceptual Focus
+1 PAN for India Requirements ISPICKVAL, ISBLANK Cross-field conditional mandate
+2 Enrollment Date Conditional Block ISPICKVAL, ISBLANK
+
+Dependent transaction state
+processing
+
+3
+Revenue Amount Security Modification
+Lock ISPICKVAL, ISCHANGED
+
+Locking down attributes post-
+transaction
+
+4 Agriculture Tiering Compliance Automation ISPICKVAL, NOT Enforcing strict attribute alignment
+5 Gmail Domain Pattern Restriction Check CONTAINS, NOT, ISBLANK Data cleansing via domain matching
+6 Product Code Structural Factory Match LEFT, ISPICKVAL, OR, AND
+
+Complex programmatic string
+manipulation
+
+7 Mobile Length Country-Specific Matrix LEN, ISPICKVAL, OR, AND Character constraint verification
+8
+Manager Approval Shipment Compliance
+Validation ISPICKVAL, NOT (Boolean)
+
+Checkbox-driven security state
+authorization
+
+9
+Parent Contact Channel Cross-Object
+Evaluation ISBLANK, __r Relationship Relational schema traversal logic
+10
+Chemical Classification Group Matrix
+Exclusion ISPICKVAL × 2
+
+Restricting conflicting tracking
+matrices
+
+11 Loan Limit Financial Boundary Validation ISPICKVAL, OR, AND, <=, >= Multi-tier numeric value evaluations
+12 Enrollment Date Future Horizon Block TODAY() Chronological logic constraints
+13
+Lead Meeting Timestamp Integrity
+Preservation NOW(), ISBLANK DateTime context synchronization
+14
+Loan Lifespan Hard Operational Ceiling
+Limit DATE(), ISBLANK Validating static chronological dates
+15
+Opportunity Fiscal Closing Year
+Verification YEAR() Calendar-year equivalence testing
+16
+Ford Service Activation Matching
+Alignment DATEVALUE()
+
+Casting DateTime structures to
+clean Dates
+
+17 Pipeline Stage Initial Creation Block ISNEW(), ISPICKVAL Lifecycle enforcement parameters
+18
+Case Installation Permission Profile
+Restriction $Profile.Name, ISNEW()
+
+User privilege contextual data
+access
+
+19
+Curriculum Selection Exclusion Rules
+Matrix INCLUDES() × 2
+
+Validating multi-select data array
+elements
