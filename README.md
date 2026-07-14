@@ -35,4 +35,32 @@ Role Hierarchy:A tree structure of roles in the organisation. Users at higher ro
 
 <img width="732" height="256" alt="image" src="https://github.com/user-attachments/assets/1d702889-e8f7-4b9f-8fec-2f80a0b4a872" />
 
-     
+
+
+
+Validation Rules
+Validation rules verify that the data a user enters in a record meets the structural standards you specify before
+the user can save the record. A validation rule contains a formula or expression that evaluates the data in one or more fields and returns a value of TRUE or FALSE.
+When the formula evaluates to TRUE, it indicates an invalid data entry condition. Salesforce will immediately
+block the save operation and display a predefined error message either at the top of the page or directly beneath the offending field.
+
+Key Functions & Operators Quick Reference
+Function / Operator Functional Behavior & Return Value
+ISBLANK(field) Returns TRUE if the field has no value. Highly recommended for text, numeric, and date fields.
+
+ISNULL(field) Returns TRUE if the field is null. (Legacy function; use ISBLANK for all text fields).
+ISPICKVAL(field, 'val') Returns TRUE if the single-select picklist field matches the exact string literal 'val'.
+INCLUDES(field, 'val') Returns TRUE if the multi-select picklist field includes 'val' as one of its selected options.
+
+ISNEW() Returns TRUE when the record is currently being created as a completely new entry.
+ISCHANGED(field) Returns TRUE when an existing record field value is being modified during an edit operation.
+Key Functions & Operators Quick Reference
+Function / Operator Functional Behavior & Return Value
+ISBLANK(field) Returns TRUE if the field has no value. Highly recommended for text, numeric, and date fields.
+
+ISNULL(field) Returns TRUE if the field is null. (Legacy function; use ISBLANK for all text fields).
+ISPICKVAL(field, 'val') Returns TRUE if the single-select picklist field matches the exact string literal 'val'.
+INCLUDES(field, 'val') Returns TRUE if the multi-select picklist field includes 'val' as one of its selected options.
+
+ISNEW() Returns TRUE when the record is currently being created as a completely new entry.
+ISCHANGED(field) Returns TRUE when an existing record field value is being modified during an edit operation.
