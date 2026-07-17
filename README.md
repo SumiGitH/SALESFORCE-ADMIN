@@ -35,6 +35,8 @@ Role Hierarchy:A tree structure of roles in the organisation. Users at higher ro
 
 <img width="732" height="256" alt="image" src="https://github.com/user-attachments/assets/1d702889-e8f7-4b9f-8fec-2f80a0b4a872" />
 
+
+
 | Feature                              | What it Controls                                                                                                                                                    | When to Use                                                                             | Example                                                                                                                |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | **Organization-Wide Defaults (OWD)** | Defines the **baseline record access** for all users. Determines whether records are Private, Public Read Only, or Public Read/Write.                               | Use when deciding the default visibility of records across the organization.            | Sales reps should only see their own Opportunities → Set Opportunity OWD to **Private**.                               |
@@ -42,6 +44,34 @@ Role Hierarchy:A tree structure of roles in the organisation. Users at higher ro
 | **Field-Level Security (FLS)**       | Controls **which fields a user can view or edit** on an object.                                                                                                     | Use when users should access a record but not see or modify certain sensitive fields.   | HR can view the "Salary" field, but managers can only view it and employees cannot see it at all.                      |
 | **Role Hierarchy**                   | Controls **record visibility based on organizational hierarchy**. Users higher in the hierarchy can access records owned by users below them (when OWD is Private). | Use when managers need visibility into their team's records without changing ownership. | A Sales Manager can see Opportunities owned by all Sales Representatives reporting to them.                            |
 | **Record Type**                      | Controls **different business processes, page layouts, and picklist values** for the same object. It does **not** control security.                                 | Use when different teams use the same object differently.                               | On the Case object, Support uses one Record Type while Finance uses another with different fields and picklist values. |
+
+
+How they work together
+Think of Salesforce security in layers:
+
+Profile – Determines what actions a user can perform (Create, Read, Edit, Delete).
+Field-Level Security – Determines which fields the user can see or edit.
+OWD – Determines the default access to records.
+Role Hierarchy – Expands record access based on reporting structure.
+Sharing Rules/Manual Sharing (if needed) – Provides additional record access beyond OWD and Role Hierarchy.
+Record Type – Customizes the user experience with different page layouts and business processes; it does not affect security.
+Interview Answer (2-minute version)
+OWD sets the baseline record access across the organization. If records should be private by default, we configure OWD accordingly.
+
+Profiles define what users can do, such as object permissions, app access, tabs, and system permissions.
+
+Field-Level Security controls access to individual fields, allowing sensitive information to be hidden or made read-only for certain users.
+
+Role Hierarchy provides record visibility based on the organization's reporting structure, allowing managers to access records owned by their subordinates.
+
+Record Types support different business processes by providing different page layouts, picklist values, and workflows for the same object. They improve the user experience but do not grant or restrict access.
+
+Easy way to remember
+OWD → "Who can see the record by default?"
+Profile → "What can the user do?"
+FLS → "Which fields can the user see or edit?"
+Role Hierarchy → "Who gets additional record access based on reporting structure?"
+Record Type → "Which business process and page layout should the user see?"
 
 
 
