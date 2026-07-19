@@ -217,7 +217,10 @@ elements
 
 
 CASE ASSIGNMENT RULE: A rule that automatically assigns Case records to a user or queue based on criteria. Only one rule can be active per object at a time. In that we can define multiple entries. 
-
+Steps:
+1. Define Rule
+2. Define Criteria
+3. Assign User or Queue
 
 
 
