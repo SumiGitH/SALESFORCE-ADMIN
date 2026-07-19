@@ -209,3 +209,18 @@ Matrix INCLUDES() × 2
 
 Validating multi-select data array
 elements
+
+
+
+
+
+
+
+CASE ASSIGNMENT RULE: A rule that automatically assigns Case records to a user or queue based on criteria. Only one rule can be active per object at a time. In that we can define multiple entries. 
+
+
+
+
+
+
+LEAD ASSIGNMENT RULE: A rule that automatically assigns Lead records when they are created or re-saved. Evaluates criteria from top to bottom and stops at the first match.
