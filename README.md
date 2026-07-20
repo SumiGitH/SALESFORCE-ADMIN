@@ -231,3 +231,9 @@ Lead Assignment:Prerquisities: Picklist field create karna in lead object, indiv
 
 
 
+SHARING RULES: Sharing Rules are exceptions to OWDs — they open up access, never restrict it below the OWD level. 
+There are two types: 
+1. Criteria-Based Sharing Rules (share based on field values) and
+2. Owner-Based Sharing Rules (share based on who owns the record).
+   
+Salesforce supports a maximum of 300 sharing rules per object.
