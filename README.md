@@ -50,11 +50,17 @@ How they work together
 Think of Salesforce security in layers:
 
 Profile – Determines what actions a user can perform (Create, Read, Edit, Delete).
+
 Field-Level Security – Determines which fields the user can see or edit.
+
 OWD – Determines the default access to records.
+
 Role Hierarchy – Expands record access based on reporting structure.
+
 Sharing Rules/Manual Sharing (if needed) – Provides additional record access beyond OWD and Role Hierarchy.
+
 Record Type – Customizes the user experience with different page layouts and business processes; it does not affect security.
+
 Interview Answer (2-minute version)
 OWD sets the baseline record access across the organization. If records should be private by default, we configure OWD accordingly.
 
