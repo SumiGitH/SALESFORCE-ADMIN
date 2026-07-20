@@ -221,9 +221,13 @@ Steps:
 1. Define Rule
 2. Define Criteria
 3. Assign User or Queue
-
+Case Assignment : Prerequisites: Case object Setup, Case Queues, Then Assignment Rule. Case me picklist field create karna, fir Queues me individual queues, then, case assignment rule create karna hai.
 
 
 
 
 LEAD ASSIGNMENT RULE: A rule that automatically assigns Lead records when they are created or re-saved. Evaluates criteria from top to bottom and stops at the first match.
+Lead Assignment:Prerquisities: Picklist field create karna in lead object, individual queue create karna hai and then work on lead asignment rule.
+
+
+
